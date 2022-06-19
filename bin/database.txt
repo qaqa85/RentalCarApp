@@ -1,0 +1,10 @@
+Mazda;VAN;Pawel;SMALL;true;0;2022-06-14
+Opel;SUV;Zbyszek;MID;false;1;2022-06-14
+Mazda;KOMBI;Pawel;SMALL;false;2;2022-06-14
+Mazda;VAN;Pawel;VIP;false;3;2022-06-14
+BMW;VAN;Krzysztof;SMALL;true;4;2022-06-14
+Star;KOMBI;Pawel;VIP;true;6;0001-01-01
+Mazda;VAN;Jan;VIP;true;7;0001-01-01
+Peguet;VAN;Pawel;SMALL;true;8;0001-01-01
+Opel;SUV;Genowefa;MID;true;9;0001-01-01
+Linkoln;KOMBI;Pawel;SMALL;true;10;0001-01-01
