@@ -1,4 +1,4 @@
-package com.carSharing;
+package com.CarRental.Exceptions;
 
 public class ObjectNotFoundException extends RuntimeException{
 

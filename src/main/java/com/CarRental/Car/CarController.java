@@ -1,4 +1,4 @@
-package com.carSharing;
+package com.CarRental.Car;
 
 public class CarController {
 	private final CarService service;

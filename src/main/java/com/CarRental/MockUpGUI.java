@@ -1,4 +1,6 @@
-package com.carSharing;
+package com.CarRental;
+
+import com.CarRental.Car.CarController;
 
 import java.util.Scanner;
 

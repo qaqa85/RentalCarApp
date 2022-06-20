@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9291782-ad01-4532-a3c5-2693ba4f358c" name="Changes" comment="" />
+    <list default="true" id="b9291782-ad01-4532-a3c5-2693ba4f358c" name="Changes" comment="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AnmDEFEMseOuSFLNRGbl9zfPaI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +37,7 @@
   </component>
   <component name="RunManager">
     <configuration name="RunMockUpGUI" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.carSharing.MockUpGUI" />
+      <option name="MAIN_CLASS_NAME" value="com.CarRental.MockUpGUI" />
       <module name="carRental" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -47,11 +53,35 @@
       <option name="presentableId" value="Default" />
       <updated>1655653602585</updated>
       <workItem from="1655653603699" duration="33000" />
-      <workItem from="1655653857973" duration="433000" />
+      <workItem from="1655653857973" duration="1094000" />
+      <workItem from="1655662409336" duration="1357000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)">
+      <created>1655654486019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655654486019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)" />
   </component>
 </project>

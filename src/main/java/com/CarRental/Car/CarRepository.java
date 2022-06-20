@@ -1,4 +1,4 @@
-package com.carSharing;
+package com.CarRental.Car;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class CarRepository implements CRUDRepository<Car>{
+class CarRepository implements CRUDRepository<Car>{
 	private final File file;
 	private List<Car> cars = null;
 	
@@ -51,14 +51,14 @@ public class CarRepository implements CRUDRepository<Car>{
 	public Car delete(Car entity) {
 		if (cars.remove(entity))
 			return entity;
-		return null;	
+		return null;
 	}
-	
+
 	public boolean existsById(int id) {
 		return cars.stream()
 				.anyMatch(car-> car.getId() == id);
 	}
-	
+
 	public Optional<Car> readById(int id) {
 		return cars.stream()
 				.filter(car -> car.getId() == id)

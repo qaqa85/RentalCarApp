@@ -1,4 +1,4 @@
-package com.carSharing;
+package com.CarRental.Car;
 
 interface CRUDRepository<T> {	
 	//C
