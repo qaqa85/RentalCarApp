@@ -37,7 +37,7 @@ class CarService {
 				if(car.isAvailable() == available) {
 					//real toggle
 					car.setAvailable(!car.isAvailable());
-					//save dateOftoggle
+					//save dateOf toggle
 					car.setDate(LocalDate.now());
 					return true;
 				}
@@ -92,5 +92,19 @@ class CarService {
 	//save DB on close
 	public void close() {
 		repository.saveDataBase();
+	}
+
+	String readBill(String data) {
+		try {
+			Optional<Car> car = repository.readById(Integer.parseInt(data));
+			if (car.isPresent()) {
+				CarPriceEstimator carPriceEstimator = new CarPriceEstimator(car.get());
+				//todo add in the future other currencies(obtained from API)
+				return carPriceEstimator.EstimatePriceForRenting().toString() + "zl";
+			}
+		} catch (NumberFormatException e) {
+			System.out.println("Wrong id number");
+		}
+		return null;
 	}
 }

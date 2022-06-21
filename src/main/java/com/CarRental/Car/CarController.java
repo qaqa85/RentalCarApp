@@ -27,11 +27,11 @@ public class CarController {
 		service.readAllByCarType(carType).forEach(System.out::println);
 	}
 	
-	public void setToggleForRent(String id) {
+	public void rentCar(String id) {
 		System.out.println(service.toggleByIdIfAvailable(id, true));
 	}
 	
-	public void setToggleForReturn(String id) {
+	public void returnCar(String id) {
 		System.out.println(service.toggleByIdIfAvailable(id, false));		
 	}
 	
@@ -47,4 +47,7 @@ public class CarController {
 		service.close();
 	}
 
+	public void readBillForRent(String data) {
+		System.out.println(service.readBill(data));
+	}
 }

@@ -13,16 +13,17 @@ public class MockUpGUI {
 		do {
 			System.out.println("WYN(Wynajmij), ODD(Oddaj), WW(Wys. wszystkie), WD(Wys. dostepne), WN(Wys. niedostepne), WT(Wys. typ), WT(Pod. typ), WC(Pod. kat),END");
 			System.out.println("ADD(add Car), DEL(del Car)\n");
-			data = scanner.nextLine().toUpperCase();	
-			
+			data = scanner.nextLine().toUpperCase();
+
 			switch (data) {
 			case "WYN" :
 				data = scanner.nextLine();
-				carController.setToggleForRent(data);
+				carController.rentCar(data);
 				break;
 			case "ODD" :
 				data = scanner.nextLine();
-				carController.setToggleForReturn(data);
+				carController.readBillForRent(data);
+				carController.returnCar(data);
 				break;
 			case "WW" :
 				carController.printAllCars();
@@ -58,7 +59,7 @@ public class MockUpGUI {
 				break;
 			default :
 				System.out.println("unknown command");
-			}		
+			}
 		} while (true);
 	}
 	

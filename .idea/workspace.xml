@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9291782-ad01-4532-a3c5-2693ba4f358c" name="Changes" comment="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)">
+    <list default="true" id="b9291782-ad01-4532-a3c5-2693ba4f358c" name="Changes" comment="Refactor class structure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarPriceEstimator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CarRental/MockUpGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CarRental/MockUpGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +40,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="N:\IntelliJ Projects\carRental\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
@@ -55,6 +72,8 @@
       <workItem from="1655653603699" duration="33000" />
       <workItem from="1655653857973" duration="1094000" />
       <workItem from="1655662409336" duration="1357000" />
+      <workItem from="1655750767580" duration="2556000" />
+      <workItem from="1655827339637" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)">
       <created>1655654486019</created>
@@ -63,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655654486019</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor class structure">
+      <created>1655751186703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655751186703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +108,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;&#10;- Rental application with Server/Repository/Controller&#10;- Repository based on file text (csv style)" />
+    <MESSAGE value="Refactor class structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor class structure" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/CarRental/Car/CarController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

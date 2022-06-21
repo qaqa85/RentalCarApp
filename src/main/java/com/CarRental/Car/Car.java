@@ -66,7 +66,7 @@ class Car {
 	@Override
 	public String toString() {
 		return "Car [id=" + id + ", name=" + name + ", carType=" + carType + ", owner=" + owner + ", categoryType="
-				+ categoryType + ", avaiable=" + available + "]";
+				+ categoryType + ", available=" + available + "]";
 	}
 	
 	public String toFileFormat() {
@@ -82,7 +82,25 @@ class Car {
 		this.id = carBuilder.id;
 		this.date = carBuilder.date;
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(available, carType, categoryType, id, name, owner);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CarBuilder other = (CarBuilder) obj;
+		return available == other.available && carType == other.carType && categoryType == other.categoryType
+				&& id == other.id && Objects.equals(name, other.name) && Objects.equals(owner, other.owner);
+	}
+
 	public static class CarBuilder {
 		private int id;
 		private String name;
@@ -91,22 +109,22 @@ class Car {
 		private CategoryType categoryType;
 		private boolean available;
 		private LocalDate date;
-		
+
 		public CarBuilder withId(int id) {
 			this.id = id;
 			return this;
 		}
-		
+
 		public CarBuilder withId(String id) {
 			this.id = Integer.parseInt(id);
 			return this;
 		}
-		
+
 		public CarBuilder withName(String name) {
 			this.name = name;
 			return this;
 		}
-	
+
 		public CarBuilder withCarType(CarType carType) {
 			this.carType = carType;
 			return this;
@@ -126,7 +144,7 @@ class Car {
 			this.categoryType = categoryType;
 			return this;
 		}
-		
+
 		public CarBuilder withCategoryType(String categoryType) {
 			this.categoryType = CategoryType.valueOf(categoryType.toUpperCase());
 			return this;
@@ -136,7 +154,7 @@ class Car {
 			this.available = available;
 			return this;
 		}
-		
+
 		public CarBuilder withAvailable(String available) {
 			this.available = Boolean.parseBoolean(available);
 			return this;
@@ -146,34 +164,14 @@ class Car {
 			this.date = date;
 			return this;
 		}
-		
+
 		public CarBuilder withLocalDate(String date) {
 			this.date = LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 			return this;
 		}
-		
+
 		public Car build() {
 			return new Car(this);
 		}
-
-		@Override
-		public int hashCode() {
-			return Objects.hash(available, carType, categoryType, id, name, owner);
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			CarBuilder other = (CarBuilder) obj;
-			return available == other.available && carType == other.carType && categoryType == other.categoryType
-					&& id == other.id && Objects.equals(name, other.name) && Objects.equals(owner, other.owner);
-		}
-		
-		
 	}
 }

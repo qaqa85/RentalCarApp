@@ -23,7 +23,7 @@ class CarRepository implements CRUDRepository<Car>{
 	 * Adds car object if it does not exist in repository
 	 * otherwise returns null
 	 * 
-	 * @param Car entity that will be passed to database
+	 * @param entity object that will be passed to database
 	 * @return Car entity or null
 	 */
 	@Override
@@ -145,12 +145,12 @@ class CarRepository implements CRUDRepository<Car>{
 						.withId(paramTab[ID])
 						.withLocalDate(paramTab[DATA])
 						.build();
-				
+
 				if(cars == null)
 					cars = new LinkedList<>();
-				
+
 				cars.add(car);
-					
+
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("Error cant read the database");
