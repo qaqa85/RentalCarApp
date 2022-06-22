@@ -47,7 +47,7 @@ public class CarController {
 		service.close();
 	}
 
-	public void readBillForRent(String data) {
-		System.out.println(service.readBill(data));
+	public void readBillForRent(String data, String paymentCurrency) {
+		System.out.println(service.readBill(data, paymentCurrency));
 	}
 }

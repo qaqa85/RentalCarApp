@@ -1,5 +1,8 @@
 package com.CarRental.Car;
 
+import com.CarRental.Exchanger.Exchanger;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -94,13 +97,14 @@ class CarService {
 		repository.saveDataBase();
 	}
 
-	String readBill(String data) {
+	String readBill(String data, String paymentCurrency) {
 		try {
 			Optional<Car> car = repository.readById(Integer.parseInt(data));
 			if (car.isPresent()) {
 				CarPriceEstimator carPriceEstimator = new CarPriceEstimator(car.get());
-				//todo add in the future other currencies(obtained from API)
-				return carPriceEstimator.EstimatePriceForRenting().toString() + "zl";
+
+				Exchanger exchanger = new Exchanger();
+				return carPriceEstimator.EstimatePriceForRenting().multiply(new BigDecimal(exchanger.exchangeCurrencies(paymentCurrency))).toString() + " " + paymentCurrency;
 			}
 		} catch (NumberFormatException e) {
 			System.out.println("Wrong id number");

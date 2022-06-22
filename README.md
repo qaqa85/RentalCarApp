@@ -22,4 +22,6 @@ Contains
 * File reading/writing
 * CRUD
 * Streams
-* Contoller - Service - Repository structure
+* HttpClient
+* GSON
+* Controller - Service - Repository structure

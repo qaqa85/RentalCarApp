@@ -2,6 +2,7 @@ package com.CarRental;
 
 import com.CarRental.Car.CarController;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class MockUpGUI {
@@ -21,8 +22,10 @@ public class MockUpGUI {
 				carController.rentCar(data);
 				break;
 			case "ODD" :
+				System.out.println("Podaj id oddawanego pojazdu");
 				data = scanner.nextLine();
-				carController.readBillForRent(data);
+				System.out.println("Podaj walute platnosci");
+				carController.readBillForRent(data, scanner.nextLine());
 				carController.returnCar(data);
 				break;
 			case "WW" :
